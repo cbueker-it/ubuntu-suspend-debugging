@@ -10,6 +10,7 @@ Initial State
 Session type:
 
 `echo $XDG_SESSION_TYPE`
+
 wayland
 
 Observed Issue
@@ -32,6 +33,7 @@ Notable warning:
 
 3. Verified available sessions:
    `ls -1 /usr/share/xsessions`
+   
    `ls -1 /usr/share/wayland-sessions`
 
 Confirmed Xorg session installed.
@@ -42,6 +44,7 @@ Switched from Wayland to Xorg via GDM session selector.
 
 Verified:
    `echo $XDG_SESSION_TYPE`
+   
    x11
 
 Hypothesis
