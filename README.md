@@ -9,9 +9,7 @@ System Info
 Initial State
 Session type:
 
-- `echo $XDG_SESSION_TYPE`
-
-wayland
+- `echo $XDG_SESSION_TYPE` > wayland
 
 Observed Issue
 - After suspend, keyboard input would behave abnormally.
@@ -43,9 +41,7 @@ Mitigation
 Switched from Wayland to Xorg via GDM session selector.
 
 Verified:
-   - `echo $XDG_SESSION_TYPE`
-   
-   x11
+   - `echo $XDG_SESSION_TYPE` > x11
 
 Hypothesis
 
