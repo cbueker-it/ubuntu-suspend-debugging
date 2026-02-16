@@ -38,18 +38,18 @@ Confirmed Xorg session installed.
 
 Mitigation
 
-Switched from Wayland to Xorg via GDM session selector.
+I switched it from Wayland to Xorg via the GDM session selector.
 
 Verified:
    - `echo $XDG_SESSION_TYPE` > x11
 
 Hypothesis
 
-Suspend/resume state corruption affecting:
+The suspend/resume state corruption impacts:
 - i8042 keyboard controller
 - Wayland input handling
 - Bluetooth HID interaction
 
 Status
 
-Testing Xorg session for stability.
+I am observing OS behavior and testing the Xorg session for system stability.
