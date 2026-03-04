@@ -12,7 +12,7 @@ Session type:
 - `echo $XDG_SESSION_TYPE` > wayland
 
 Observed Issue
-- After suspend, keyboard input would behave abnormally.
+- After a suspension, keyboard input would behave abnormally.
 - Scrolling switched workspaces.
 - Occasional keyboard freeze.
 - Audio resume anomalies previously observed.
@@ -53,3 +53,21 @@ The suspend/resume state corruption impacts:
 Status
 
 I am observing OS behavior and testing the Xorg session for system stability.
+
+Update (Two Weeks Later)
+
+After running the system on the Xorg session for approximately two weeks, my Ubuntu 24.04 system has remained completely stable.
+
+These are the results that I observed:
+
+- No more abnormal keyboard behavior after suspend.
+- No workspace switching caused by scrolling.
+- No keyboard freezes.
+- Audio resumes correctly after suspend.
+- Overall suspend/resume behavior is stable and predictable.
+
+Conclusion:
+
+Switching from Wayland to Xorg resolved the suspend/resume input state issue on my daily Linux machine. The issue appears to have been related to the interaction between Wayland input handling, the i8042 keyboard controller, and Bluetooth HID devices during the suspend/resume cycle.
+
+My Ubuntu distro (the OS) has been operating normally since the change!
