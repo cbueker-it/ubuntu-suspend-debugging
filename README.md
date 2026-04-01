@@ -1,4 +1,4 @@
-Ubuntu 22.04 Suspend/Resume Debugging
+**Ubuntu 22.04 Suspend/Resume Debugging**
 
 System Info
 - Ubuntu 22.04 LTS
